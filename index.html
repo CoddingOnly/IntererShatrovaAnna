@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel=" shortcut icon" href="images/favicon.png" type="images/x-icon">
+    <title>Шатрова_Анна_Демоэкзамен</title>
+    </head>
+    <body>
+
+    <!-- Шапка  --> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#"><img src="images/logo.svg" alt="Логотип"></a>
+                
+                <nav class="menu__header">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Блог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Решения</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="basket">
+                    <a class="basket__item" href="#"><img src="images/search.svg" alt=""></a>
+                    <a class="basket__item" href="#"><img src="images/basket.svg" alt=""></a>
+                </div>
+                <button class="burger__btn"><img class="toggle" src="images/burger.png" alt="Меню"></button>
+            </div>
+        </div>
+    </header>
+
+
+    <!--  Заголовок и пункты -->
+    <main class="main">
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__img">
+                <div class="line"></div>
+                <span>Каталог</span>
+                </div>
+                <div class="catalog__text">
+                <h1 class="catalog__titel">Лучшие новинки</h1>
+                <div class="catalog__btn">
+                    <button class="cat__btn black">Мебель</button>
+                    <button class="cat__btn">Свет</button>
+                    <button class="cat__btn">Декор</button>
+                </div>
+                </div>
+
+    <!-- Карточки -->
+                <div class="card">
+                         <!-- 1 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/1pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <h3 class="card__titel">Кресло</h3>
+                        <p class="rating">★★★★★</p>   
+                        </div>
+                        <p class="card__descr"><span> 4000 ₽ </span> 3500₽</p>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/2pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <h3 class="card__titel">Кресло</h3>
+                        <p class="rating">★★★★★</p>   
+                        </div>
+                        <p class="card__descr"> <span> 3400 ₽ </span> 3100₽</p>
+                        </div>
+
+                         <!-- 3 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/3pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" id="card" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <span>
+                        <h3 class="card__titel">Ваза для цветов</h3>
+                        <p class="rating">★★★★★</p>                       
+                        </span>
+                        </div>
+                        <p class="card__descr"> 1100₽</p>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/4pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <h3 class="card__titel">Стул</h3>
+                        <p class="rating">★★★★★</p>   
+                        </div>
+                        <p class="card__descr">2300₽</p>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                            <img class="card__img" src="images/5pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <h3 class="card__titel">Лампа</h3>
+                        <p class="rating">★★★★★</p>   
+                        </div>
+                        <p class="card__descr">4800₽</p>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/6pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <span>
+                        <h3 class="card__titel">Ваза для цветов</h3>
+                        <p class="rating">★★★★★</p>   
+                        </span>
+                        </div>
+                        <p class="card__descr"><span> 2300 ₽ </span> 1900₽</p>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/7pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <span>
+                        <h3 class="card__titel card__titel-margin">Серый стул </h3>
+                        <p class="rating">★★★★★</p>   
+                        </span>
+                        </div>
+                        <p class="card__descr"><span> 4100 ₽ </span> 2500₽</p>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="card__inner">
+                        <div class="card__bg">
+                        <img class="card__img" src="images/8pic.png" alt="">
+                        </div>
+                        <div class="card__btn">
+                            <a class="card__btn-img" href="#"><img src="images/refrash.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/like.svg" alt=""></a>
+                            <a class="card__btn-img" href="#"><img src="images/basket_btn.svg" alt=""></a>
+                        </div>
+                        <div class="card__text">
+                        <span>
+                        <h3 class="card__titel card__titel-margin">Серый стул</h3>
+                        <p class="rating">★★★★★</p>   
+                        </span>
+                        </div>
+                        <p class="card__descr">3300₽</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+                      <!--Подвал -->
+                      <footer class="footer">
+                         <div class="container">
+                           <div class="footer__inner">
+                           <a class="logo__footer" href="#"><img src="images/logo.svg" alt="Логотип"></a>
+                           <h2 class="footer__title">Подпишитесь на новости</h2>
+                           <p class="footer__descr">Оставьте свой emeil и вы будите получать актуальную информацию о наших акциях и новинках</p>
+                           <form class="form">
+                           <input class="form__btn" type="email" placeholder="Введите email" required>
+                           <button class=" form__btn footer__btn">Подписаться</button>
+                           </form>
+                           </div>
+                        </div>
+                    </footer>
+                    <script src="index.js"></script>
+        </body>
+        </html>

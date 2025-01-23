@@ -1,0 +1,465 @@
+html {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+
+.lo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1141px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+/* Шапка */
+
+.header {
+    background-color: #D3CBC5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.menu__link {
+    color: #1B1A1A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid #1B1A1A;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    margin-right: 6px;
+}
+.burger__btn {
+    color: #000;
+}
+
+
+
+
+/* Каталог и карточки */
+
+.catalog__img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 46px;
+    margin-bottom: 21px
+}
+
+.card__img {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+
+.card__img:hover {
+    transform: scale(1.2);
+}
+
+.catalog__img span {
+    color: #9A6437;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 55px;
+    height: 1px;
+    background-color: #9A6437;
+}
+
+.catalog__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog__btn {
+    display: flex;
+    gap: 25px;
+}
+
+.catalog {
+    width: 100%;
+}
+
+.cat__btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 77px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #353535;
+}
+
+.catalog__titel {
+    font-weight: normal;
+}
+
+.cat__btn.black {
+    background-color: black;
+    color: white;
+}
+
+.cat__btn:not(.black):hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Карточки */
+
+.black {
+    background-color: #1C1B1B;
+    color: #fff;
+}
+
+.catalog__titel {
+    color: #1B1A1A;
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.card__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.basket__item:hover {
+    border-bottom: 1px solid #1B1A1A;
+}
+
+.card__bg {
+    background-color: #f7f7f7;
+    box-shadow: 0px 5px 10px 0px rgba(206, 156, 156, 0.5);
+    width: 270px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card__img {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    position: relative;
+}
+
+.card__btn-img img {
+    transition: filter 0.3s ease-in-out; /* Плавный переход */
+}
+
+.card__btn-img:hover img {
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(45deg) brightness(150%); /* Желтый цвет */
+}
+
+.card__btn {
+    background-color: #1C1B1B;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    max-height: 33px;
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    position: absolute;
+    bottom: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__btn:hover {
+    background-color: rgb(116, 103, 103);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 34px;
+}
+
+.card__text {
+    position: absolute;
+    bottom: -80px;
+    display: flex;
+    gap: 122px;
+    white-space: nowrap;
+}
+
+.card__text span {
+    display: flex;
+    gap: 42px;
+}
+
+.card__titel {
+    color: #282828;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.card__descr {
+    position: absolute;
+    bottom: -110px;
+    color: #000;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.card__descr span {
+    text-decoration: line-through;
+    color: #737373;
+    margin-right: 10px;
+}
+
+.card__titel-margin {
+    margin-right: 46px;
+}
+
+.card__titel-margin_2 {
+    margin-right: 36px;
+}
+
+.rating {
+    color: gold;
+    margin: -13px 0;
+    text-align: right;
+
+}
+
+
+
+/* Подвал */
+.footer {
+    background-color: #D9D9D9;
+    padding-top: 49px;
+    padding-bottom: 80px;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__title {
+    color: #1B1A1A;
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 43px;
+    margin-bottom: 7px;
+    font-weight: normal;
+}
+
+.footer__descr {
+    width: 406px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #5E5E5E;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.form__btn {
+    padding: 11px 10px;
+    background-color: transparent;
+    border: 1px solid #5A5A5A;
+    border-radius: 4px;
+}
+
+.form__btn:placeholder {
+    color: #8E8E8E;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer__btn {
+    cursor: pointer;
+    color: #1B1A1A;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__btn:hover {
+    background-color: rgb(211, 184, 184);
+    color: #fff;
+}
+
+.burger__btn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    background-color: #D3CBC5;
+}
+
+
+/* Адаптив */
+
+@media (max-width:992px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .menu__list {
+        gap: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        max-width: 590px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        right: 0;
+    }
+
+    .menu__link {
+        line-height: 0px;
+    }
+
+    .basket {
+        order: -1;
+        margin-left: 10px;
+    }
+
+    .burger__btn {
+        display: block;
+        position: relative;
+    }
+
+    .menu__header {
+        display: none;
+    }
+
+    .menu__show {
+        display: block;
+    }
+
+}
+
+@media (max-width:598px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .catalog__text {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card__inner {
+        max-width: 240px;
+    }
+
+    .card__btn {
+        width: 210px;
+    }
+
+    .card__text {
+        gap: 92px;
+    }
+
+    .card__text span {
+        gap: 12px;
+    }
+}
+
+@media (max-width:519px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card__inner {
+        padding-left: 100px;
+        padding-right: 120px;
+    }
+}
+
+@media (max-width:463px) {
+    .footer__title {
+        text-align: center;
+    }
+}
